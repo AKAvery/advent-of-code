@@ -12,7 +12,7 @@ for lines in original:
             last = char
     
         for i in range(6):
-            if lines[index:index+1] in numbers:
+            if lines[index:index+i] in numbers:
                 last = numbers[lines[index:index+i]]
         
     for index, char in enumerate(lines):
@@ -32,10 +32,3 @@ for lines in original:
         single = first + last
         final += int(single)
         print(final)
-
-
-
-
-
-
-
